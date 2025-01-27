@@ -3,13 +3,12 @@ import Image from "next/image";
 
 const Navbar = () => {
   return (
-    <nav className="fixed z-50 flex w-full justify-between items-center p-4 bg-white">
+    <nav className="fixed z-50 flex w-full justify-between items-center py-4 px-[9vw] bg-white">
       <Link href="/">
-        {/* <img src="/images/logo_kenko.svg" alt="Kenkovit Logo" className="h-12" /> */}
         <Image 
             src="/images/logo_kenko.svg" 
             alt="Kenkovit Logo" 
-            width={156} 
+            width={100} 
             height={78} 
             className="h-12"
         />
