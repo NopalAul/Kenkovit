@@ -5,26 +5,28 @@ export default function HomePage() {
   return (
     <>
       <HeroSection />
-      <div className="grid grid-cols-2 gap-4 p-10">
-        <div className="bg-pink-200 p-6">
+      <Image 
+        src="/images/model.svg"
+        alt="Model"
+        width={1014}
+        height={460}
+        className="absolute z-10 top-48 right-10"
+        />
+      <div className="grid grid-cols-2">
+        <div className="bg-pink1 p-32 text-white">
           <h2 className="text-xl font-bold mb-4">Subtitle</h2>
           <p className="text-sm">
             lorem daimasimapocac sac oasmpocsksa scooo aad asd aeda
             ca oac a cas casdcaea cascasca
           </p>
         </div>
-        <div className="flex justify-center items-center">
-          {/* <img
-            src="/images/flower2.svg"
-            alt="Flower"
-            className="w-32 h-32"
-          /> */}
+        <div className="flex justify-center items-center py-32">
           <Image 
             src="/images/flower2.svg"
             alt="Flower"
-            width={128}
-            height={128}
-            className="w-32 h-32"
+            width={400}
+            height={400}
+            className="w-100 h-100"
             />
         </div>
       </div>
