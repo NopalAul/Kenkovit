@@ -2,8 +2,8 @@
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
-import Image from "next/image";
 import Link from "next/link";
+import ProductCard from "@/components/Card/ProductCard";
 
 const products = [
   {
@@ -32,40 +32,30 @@ const ProductCarousel = () => {
       {/* Carousel */}
       <div>
         <Swiper
-            modules={[Navigation, Pagination]}
-            spaceBetween={0}
-            slidesPerView={2}
-            // navigation
-            pagination={{ clickable: true }}
-            breakpoints={{
+          modules={[Navigation, Pagination]}
+          spaceBetween={0}
+          slidesPerView={2}
+          pagination={{ clickable: true }}
+          breakpoints={{
             640: { slidesPerView: 1 },
             1024: { slidesPerView: 2 },
-            }}
-            className="h-[60vh] w-[60vw]"
+          }}
+          className="h-[60vh] w-[60vw]"
         >
-            {products.map((product) => (
+          {products.map((product) => (
             <SwiperSlide key={product.id} className="flex items-center justify-center">
-                <div className={`w-[290px] h-[350px] p-6 rounded-2xl shadow-cardCombined ${product.bgColor} flex flex-col items-center justify-center`}>
-                <Image
-                    src={product.image}
-                    alt={product.name}
-                    height={300}
-                    width={300}
-                    className="h-60 w-auto"
-                />
-                <h3 className="mt-4 text-center font-semibold">{product.name}</h3>
-                </div>
+              <ProductCard name={product.name} image={product.image} bgColor={product.bgColor} />
             </SwiperSlide>
-            ))}
+          ))}
         </Swiper>
       </div>
 
       {/* "See More" Button */}
       <div className="w-full h-full flex items-center justify-center">
         <Link href="/product">
-            <button className="bg-purple1 text-white px-6 py-3 rounded-full shadow-md flex items-center">
+          <button className="bg-purple1 text-white px-6 py-3 rounded-full shadow-md flex items-center">
             See More →
-            </button>
+          </button>
         </Link>
       </div>
     </div>
