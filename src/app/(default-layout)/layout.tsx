@@ -4,6 +4,7 @@ import { Poppins } from '@next/font/google';
 import { type Metadata } from "next";
 
 import Navbar from "@/components/Navigation/Navbar";
+import Footer from "@/components/Navigation/Footer";
 
 export const metadata: Metadata = {
   // metadataBase: new URL("https://sreitb.com"),
@@ -27,6 +28,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       <body>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

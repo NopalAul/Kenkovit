@@ -10,7 +10,7 @@ export default function HomePage() {
         alt="Model"
         width={1014}
         height={460}
-        className="absolute z-10 top-48 right-10"
+        className="absolute z-10 top-48 right-12"
         />
       <div className="grid grid-cols-2">
         <div className="bg-pink1 p-32 text-white">
@@ -20,7 +20,7 @@ export default function HomePage() {
             ca oac a cas casdcaea cascasca
           </p>
         </div>
-        <div className="flex justify-center items-center py-32">
+        <div className="flex bg-white2 justify-center items-center py-32">
           <Image 
             src="/images/flower2.svg"
             alt="Flower"
