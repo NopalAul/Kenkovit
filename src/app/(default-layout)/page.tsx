@@ -1,10 +1,13 @@
-import HeroSection from "@/containers/Home/HeroSection";
 import Image from "next/image";
+
+import HeroSection from "@/containers/Home/HeroSection";
+import ProductCarousel from "@/components/Carousel/ProductCarousel";
 
 export default function HomePage() {
   return (
     <>
       <HeroSection />
+      {/* model img */}
       <Image 
         src="/images/model.svg"
         alt="Model"
@@ -12,6 +15,7 @@ export default function HomePage() {
         height={460}
         className="absolute z-10 top-48 right-12"
         />
+      {/* under model section */}
       <div className="grid grid-cols-2">
         <div className="bg-pink1 p-32 text-white">
           <h2 className="text-xl font-bold mb-4">Subtitle</h2>
@@ -30,6 +34,9 @@ export default function HomePage() {
             />
         </div>
       </div>
+
+      {/* product carousel */}
+      <ProductCarousel />
     </>
   );
 }
