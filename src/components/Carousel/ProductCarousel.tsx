@@ -24,7 +24,7 @@ const ProductCarousel = () => {
         >
           {products.map((product) => (
             <SwiperSlide key={product.id} className="flex items-center justify-center">
-              <ProductCard id={product.id} name={product.name} image={product.image} bgColor={product.bgColor} />
+              <ProductCard id={product.id} />
             </SwiperSlide>
           ))}
         </Swiper>

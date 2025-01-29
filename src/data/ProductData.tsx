@@ -1,30 +1,7 @@
 const products = [
     {
         id: 1,
-        name: "Kenkovit Beauty Collagen",
-        image: "/images/Product/beauty_collagen_shadow.png",
-        bgColor: "bg-white",
-        description:
-        "Kenkovit Beauty Collagen is a premium drinkable capsule formulated to promote youthful and radiant skin. Enriched with high-quality collagen peptides, it helps to improve skin elasticity, reduce wrinkles, and enhance overall skin hydration.",
-        benefits: [
-        "Reduces fine lines and wrinkles",
-        "Boosts skin elasticity and firmness",
-        "Enhances skin hydration for a glowing look",
-        "Supports healthy hair and nails",
-        "Aids in overall skin rejuvenation",
-        ],
-        ingredients: [
-        "Hydrolyzed Marine Collagen",
-        "Hyaluronic Acid",
-        "Vitamin C",
-        "Biotin",
-        "Coenzyme Q10",
-        ],
-        usage:
-        "Take 2 capsules daily with a glass of water, preferably before bedtime for optimal absorption.",
-    },
-    {
-        id: 2,
+        category: "beauty",
         name: "Kenkovit Beauty Bright",
         image: "/images/Product/beauty_bright_shadow.png",
         bgColor: "bg-pink-100",
@@ -48,7 +25,58 @@ const products = [
         "Take 2 capsules daily with water, preferably in the morning or before meals for better absorption.",
     },
     {
+        id: 2,
+        category: "beauty",
+        name: "Kenkovit Beauty Collagen",
+        image: "/images/Product/beauty_collagen_shadow.png",
+        bgColor: "bg-white",
+        description:
+        "Kenkovit Beauty Collagen is a premium drinkable capsule formulated to promote youthful and radiant skin. Enriched with high-quality collagen peptides, it helps to improve skin elasticity, reduce wrinkles, and enhance overall skin hydration.",
+        benefits: [
+        "Reduces fine lines and wrinkles",
+        "Boosts skin elasticity and firmness",
+        "Enhances skin hydration for a glowing look",
+        "Supports healthy hair and nails",
+        "Aids in overall skin rejuvenation",
+        ],
+        ingredients: [
+        "Hydrolyzed Marine Collagen",
+        "Hyaluronic Acid",
+        "Vitamin C",
+        "Biotin",
+        "Coenzyme Q10",
+        ],
+        usage:
+        "Take 2 capsules daily with a glass of water, preferably before bedtime for optimal absorption.",
+    },
+    {
         id: 3,
+        category: "beauty",
+        name: "Kenkovit Choco (Diamond)",
+        image: "/images/Product/choco_shadow.png",
+        bgColor: "bg-pink-100",
+        description:
+        "Kenkovit Choco (Diamond) is a delicious and creamy chocolate drink enriched with collagen to promote skin health while indulging in a rich cocoa flavor. It provides essential nutrients for youthful skin, strong hair, and overall wellness.",
+        benefits: [
+        "Provides a delicious and healthy alternative to regular chocolate drinks",
+        "Enhances skin hydration and elasticity",
+        "Supports healthy joints and bones",
+        "Boosts natural collagen production",
+        "Rich in antioxidants to fight free radicals",
+        ],
+        ingredients: [
+        "Premium Cocoa Powder",
+        "Hydrolyzed Collagen",
+        "Skimmed Milk Powder",
+        "Malt Extract",
+        "Stevia (Natural Sweetener)",
+        ],
+        usage:
+        "Mix 1 sachet (or 2 tablespoons) of Kenkovit Choco (Diamond) with 150ml of warm water or milk. Stir well and enjoy daily, preferably in the morning or evening.",
+    },
+    {
+        id: 4,
+        category: "health",
         name: "Kenkovit Choco (Diamond)",
         image: "/images/Product/choco_shadow.png",
         bgColor: "bg-white",
