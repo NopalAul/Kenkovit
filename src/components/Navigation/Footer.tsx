@@ -12,7 +12,7 @@ const contacts: Contact[] = [
     {
         image: "/images/Footer/gmail.svg",
         type: "Email",
-        username: "XXXX@gmail.com",
+        username: "kenkovit.official@gmail.com",
         link: "https://mail.google.com/mail/u/0/#inbox?compose=new",
     },
     {
