@@ -2,7 +2,7 @@ const products = [
     {
         id: 1,
         name: "Kenkovit Beauty Collagen",
-        image: "/images/Product/beauty_collagen.png",
+        image: "/images/Product/beauty_collagen_shadow.png",
         bgColor: "bg-white",
         description:
         "Kenkovit Beauty Collagen is a premium drinkable capsule formulated to promote youthful and radiant skin. Enriched with high-quality collagen peptides, it helps to improve skin elasticity, reduce wrinkles, and enhance overall skin hydration.",
@@ -26,7 +26,7 @@ const products = [
     {
         id: 2,
         name: "Kenkovit Beauty Bright",
-        image: "/images/Product/beauty_bright.png",
+        image: "/images/Product/beauty_bright_shadow.png",
         bgColor: "bg-pink-100",
         description:
         "Kenkovit Beauty Bright is a drinkable capsule designed to enhance skin brightness and even out skin tone. Formulated with powerful antioxidants and natural skin-brightening ingredients, it helps to reduce dark spots, pigmentation, and dullness.",
@@ -50,7 +50,7 @@ const products = [
     {
         id: 3,
         name: "Kenkovit Choco (Diamond)",
-        image: "/images/Product/choco.jpg",
+        image: "/images/Product/choco_shadow.png",
         bgColor: "bg-white",
         description:
         "Kenkovit Choco (Diamond) is a delicious and creamy chocolate drink enriched with collagen to promote skin health while indulging in a rich cocoa flavor. It provides essential nutrients for youthful skin, strong hair, and overall wellness.",
