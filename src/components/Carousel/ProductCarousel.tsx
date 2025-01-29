@@ -4,27 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import Link from "next/link";
 import ProductCard from "@/components/Card/ProductCard";
-
-const products = [
-  {
-    id: 1,
-    name: "Kenkovit Beauty Collagen",
-    image: "/images/Product/beauty_collagen.png",
-    bgColor: "bg-white",
-  },
-  {
-    id: 2,
-    name: "Kenkovit Beauty Bright",
-    image: "/images/Product/beauty_bright.png",
-    bgColor: "bg-pink-100",
-  },
-  {
-    id: 3,
-    name: "Kenkovit Choco",
-    image: "/images/Product/choco.jpg",
-    bgColor: "bg-white",
-  },
-];
+import products from "@/data/ProductData";
 
 const ProductCarousel = () => {
   return (
@@ -44,7 +24,7 @@ const ProductCarousel = () => {
         >
           {products.map((product) => (
             <SwiperSlide key={product.id} className="flex items-center justify-center">
-              <ProductCard name={product.name} image={product.image} bgColor={product.bgColor} />
+              <ProductCard id={product.id} name={product.name} image={product.image} bgColor={product.bgColor} />
             </SwiperSlide>
           ))}
         </Swiper>
