@@ -81,8 +81,10 @@ const ProductDetail = () => {
             <h2 className="text-2xl font-medium border-b border-white pb-2 mb-4">Usage</h2>
             <p className="mt-2">{product.usage}</p>
           </div>
+
         </div>
       </div>
+      <div className="p-28"></div>
     </div>
   );
 };
