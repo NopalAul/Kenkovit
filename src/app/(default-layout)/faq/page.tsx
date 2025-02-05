@@ -1,0 +1,1 @@
+    answer: `Sejak umur 25 tahun, tubuh akan kehilangan kolagen 1.5% per tahun. Kolagen merupakan sejenis protein penopang utama kulit. Jika kolagen berkurang signifikan, akibatnya kulit terlihat kendur dan keriput. Kenkovit Beauti Collagen® diformulasikan secara khusus untuk membantu pembentukan kolagen dan mengganti kehilangan kolagen tubuh.`,
