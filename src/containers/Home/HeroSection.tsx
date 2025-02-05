@@ -14,7 +14,8 @@ const HeroSection = () => {
         />
         <div className="absolute inset-0 justify-center items-center md:items-start flex flex-col md:ml-[9vw] overflow-hidden">
           <h1 className="text-4xl font-bold text-purple1 mb-4 flex flex-col">
-            <span className="mb-4">Age is just a number</span><span>Make yours optional</span>
+            <span className="mb-2">Age is just a number</span><span>Make your own destiny</span>
+            <p className="mt-6 text-lg font-normal mr-[48vw]">Nourish your skin, restore your glow, and embrace timeless beauty. Unlock the power of collagen for a youthful, radiant you.</p>
           </h1>
         </div>
       </div>
