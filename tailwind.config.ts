@@ -3,6 +3,9 @@ import type { Config } from "tailwindcss";
 export default {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    scale: {
+      '101': '1.01',
+    },
     boxShadow: {
       card: '0 20px 30px 3px rgba(0, 0, 0, 0.1)',
       card2: '-10px -10px 30px 3px rgba(219, 0, 0, 0.1)',
