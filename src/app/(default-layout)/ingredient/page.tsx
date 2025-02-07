@@ -81,7 +81,7 @@ export default function Ingredient() {
               {ingredients.map((item, index) => (
                 <div key={index}>
                   <button
-                    className={`w-full md:w-4/5 flex justify-between items-center bg-purple1 text-white font-semibold py-3 px-4 rounded-full transition-all ${
+                    className={`w-full md:w-4/5 flex justify-between items-center bg-purple1 text-white font-semibold py-3 px-6 rounded-full transition-all ${
                       openIndex === index ? "" : "transition-transform hover:scale-101"
                     }`}
                     onClick={() => toggleDropdown(index)}
@@ -90,8 +90,8 @@ export default function Ingredient() {
                     <Image
                       src="/images/Icon/chevron_right.svg"
                       alt="Chevron Icon"
-                      width={12}
-                      height={12}
+                      width={10}
+                      height={10}
                       className={`transition-transform duration-300 ${
                         openIndex === index ? "rotate-90" : "rotate-0"
                       }`}

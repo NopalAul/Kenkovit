@@ -2,16 +2,15 @@
 
 import Image from "next/image";
 import { useState } from "react";
-// import { ChevronDown, ChevronRight } from "lucide-react";
 
 const faqData = [
   {
     question: "Mengapa Kenkovit Beauty Collagen® bermanfaat untuk mencegah penuaan dan dapat meningkatkan kecantikan dan kesehatan tubuh?",
-    answer: `Sejak umur 25 tahun, tubuh akan kehilangan kolagen 1.5% per tahun. Kolagen merupakan sejenis protein penopang utama kulit. Jika kolagen berkurang signifikan, akibatnya kulit terlihat kendur dan keriput. Kenkovit Beauti Collagen® diformulasikan secara khusus untuk membantu pembentukan kolagen dan mengganti kehilangan kolagen tubuh.`,
+    answer: `Sejak umur 25 tahun, tubuh akan kehilangan kolagen 1.5% per tahun. Kolagen merupakan sejenis protein penopang utama kulit. Jika kolagen berkurang signifikan, akibatnya kulit terlihat kendur dan keriput. Kenkovit Beauty Collagen® diformulasikan secara khusus untuk membantu pembentukan kolagen dan mengganti kehilangan kolagen tubuh.`,
   },
   {
-    question: "Apa saja kandungan utama Kenkovit Beauti Collagen®?",
-    answer: `Kenkovit Beauti Collagen® mengandung Hydrolized Marine Collagen, Vitamin C dan Vitamin E. 
+    question: "Apa saja kandungan utama Kenkovit Beauty Collagen®?",
+    answer: `Kenkovit Beauty Collagen® mengandung Hydrolized Marine Collagen, Vitamin C dan Vitamin E. 
 - Hydrolized Marine Collagen: berasal dari Ikan Tilapia, dengan struktur yang mirip Kolagen tipe I manusia. 
 - Vitamin C: Membantu pembentukan Kolagen dan Elastin serta melindungi kulit dari sinar UV.
 - Vitamin E Alami: Mencegah penuaan kulit dan lebih efektif dibanding Vitamin E sintesis.`,
@@ -21,8 +20,8 @@ const faqData = [
     answer: `Dapat dikonsumsi kapan saja, tetapi untuk hasil optimal, sebaiknya dikonsumsi pagi hari dan malam hari sebelum tidur.`,
   },
   {
-    question: "Berapa kalori per serving Kenkovit Beauti Collagen®?",
-    answer: `Kenkovit Beauti Collagen® tersedia dalam 2 pilihan rasa: 
+    question: "Berapa kalori per serving Kenkovit Beauty Collagen®?",
+    answer: `Kenkovit Beauty Collagen® tersedia dalam 2 pilihan rasa: 
 - Creamy Chocolate: 95 Kalori
 - Sweet Orange: 89 Kalori`,
   },
@@ -34,6 +33,18 @@ const faqData = [
     question: "Hasil seperti apa yang saya harapkan dapat terjadi?",
     answer: `Anda akan merasakan kulit lebih halus dalam beberapa minggu, lebih kencang, lembab, dan garis halus di sekitar mata berkurang.`,
   },
+  {
+    question: "Apakah Kenkovit Hand Sanitizer aman?",
+    answer: `Kenkovit Hand Sanitizer sangat aman, karena hanya menggunakan bahan bahan yg berasal dari supplier terpercaya. Bahan utama Alkohol, yaitu dengan jenis Ethanol, berasal dari supplier besar yg memiliki Certificate of Analysis ( CoA)/ sertifikat analyis yang terjamin keamanannya. `,
+  },
+  {
+    question: "Apa Itu Ethanol?",
+    answer: `Ethanol adalah salah satu jenis alkohol yang berfungsi sebagai antiseptik/ desinfectan pembunuh kuman/bakteri , sebagai komponen utama Kenkovit Hand Sanitizer. Jenis alkohol yang dipakai khusus alkohol antiseptik.`,
+  },
+  {
+    question: "Bagaimana penggunaan Hand Sanitizer yang benar?",
+    answer: `Semprotkan ke telapak dan punggung tangan, lalu ratakan. Biarkan sekitar 20 detik agar mampu membunuh kuman. Jangan langsung dihirup karena  ada bau alkohol  yg cukup kuat di hidung.`,
+  },
 ];
 
 export default function FAQPage() {
@@ -44,8 +55,8 @@ export default function FAQPage() {
   };
 
   return (
-    <div className="px-[9vw] py-36 mx-auto">
-      <h1 className="text-3xl font-bold text-center text-purple1 mb-6">
+    <div className="px-[5vw] md:px-[15vw] py-36 mx-auto">
+      <h1 className="text-3xl font-bold text-center text-purple1 mb-8">
         Frequently Asked Questions
       </h1>
 
@@ -54,7 +65,7 @@ export default function FAQPage() {
           {/* Question Button */}
           <button
             onClick={() => toggleFAQ(index)}
-            className={`flex justify-between items-center w-full px-5 py-4 text-left font-medium text-sm text-white bg-purple1 rounded-2xl transition-all ${
+            className={`flex justify-between gap-2 items-center w-full px-5 py-4 text-left font-medium text-sm text-white bg-purple1 rounded-2xl transition-all ${
               openIndex === index ? "rounded-b-none" : "transition-transform hover:scale-101"
             }`}
           >
@@ -62,8 +73,8 @@ export default function FAQPage() {
             <Image
               src="/images/Icon/chevron_right.svg"
               alt="Chevron Icon"
-              width={12}
-              height={12}
+              width={10}
+              height={10}
               className={`transition-transform duration-300 ${
                 openIndex === index ? "rotate-90" : "rotate-0"
               }`}
