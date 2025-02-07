@@ -23,7 +23,7 @@ const ProductList = () => {
   });
 
   return (
-    <div className="py-32 px-[9vw] items-center">
+    <div className="py-32 px-[5vw] md:px-[9vw] items-center">
       {/* Search & filter section */}
       <div className="w-full place-self-center max-w-[760px] flex flex-col md:flex-row justify-center items-center gap-2 mb-8 mx-32">
         <input
@@ -58,10 +58,10 @@ const ProductList = () => {
 
       {/* Product Grid */}
       <div className="flex justify-center">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-2 gap-2 md:gap-8">
           {filteredProducts.length > 0 ? (
             filteredProducts.map((product, index) => (
-              <div key={product.id} className={`w-full ${index % 2 !== 0 ? "md:mt-10 mx-2" : ""}`}>
+              <div key={product.id} className={`w-full ${index % 2 !== 0 ? "md:mt-10 md:mx-2" : ""}`}>
                 <ProductCard id={product.id} />
               </div>
               ))

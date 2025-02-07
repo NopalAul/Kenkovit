@@ -5,6 +5,7 @@ export default {
   theme: {
     scale: {
       '101': '1.01',
+      '105': '1.05',
     },
     boxShadow: {
       card: '0 20px 30px 3px rgba(0, 0, 0, 0.1)',

@@ -15,12 +15,12 @@ const ProductCard: React.FC<ProductCardProps> = ({ id }) => {
 
   return (
     <Link href={`/product/${id}`} passHref>
-      <div className={`cursor-pointer w-[290px] h-[350px] rounded-2xl shadow-cardCombined ${product.bgColor} flex flex-col items-center justify-between transition-transform hover:scale-105`}>
-        <div className="px-6 pt-12">
-          <Image src={product.image} alt={product.name} height={300} width={300} className="h-60 w-auto" />
+      <div className={`cursor-pointer md:w-[290px] md:h-[350px] rounded-2xl shadow-card md:shadow-cardCombined ${product.bgColor} flex flex-col items-center justify-between transition-transform hover:scale-105`}>
+        <div className="md:px-6 pt-3 md:pt-12">
+          <Image src={product.image} alt={product.name} height={300} width={300} className="ml-2 md:ml-4 h-[200px] md:h-60 w-auto" />
         </div>
-        <div className={`flex h-[40px] bg-purple1 w-full flex-col items-center justify-center px-4 rounded-b-2xl shadow-card`}>
-          <h3 className="text-center font-medium text-white">{product.name}</h3>
+        <div className={`flex h-[50px] md:h-[40px] bg-purple1 w-full flex-col items-center justify-center px-4 rounded-b-xl md:rounded-b-2xl md:shadow-card`}>
+          <h3 className="text-center text-sm md:text-md font-normal md:font-medium text-white">{product.name}</h3>
           {/* <h4 className="text-white">{desc}</h4> */}
         </div>
       </div>

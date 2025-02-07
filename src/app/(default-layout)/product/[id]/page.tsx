@@ -42,7 +42,7 @@ const ProductDetail = () => {
         />
       </div>
 
-      {/* Benefits, Ingredients & Model Image Section */}
+      {/* Benefits, Ingredients, Specification & Model Image Section */}
       <div className="flex flex-col md:flex-row items-stretch">
         <div className="w-full md:w-1/4 relative flex">
           <Image
@@ -58,21 +58,32 @@ const ProductDetail = () => {
             {/* Benefits */}
             <div className="flex-1">
               <h2 className="text-2xl font-medium border-b border-white pb-2 mb-4">Key Benefits</h2>
-              <ul className="list-disc list-inside space-y-2">
+              <ul className="list-disc list-inside space-y-1">
                 {product.benefits.map((benefit, index) => (
                   <li key={index}>{benefit}</li>
                 ))}
               </ul>
             </div>
 
-            {/* Ingredients */}
             <div className="flex-1">
-              <h2 className="text-2xl font-medium border-b border-white pb-2 mb-4">Key Ingredients</h2>
-              <ul className="list-disc list-inside space-y-2">
-                {product.ingredients.map((ingredient, index) => (
-                  <li key={index}>{ingredient}</li>
-                ))}
-              </ul>
+              {/* Ingredients */}
+              <div className="flex-1">
+                <h2 className="text-2xl font-medium border-b border-white pb-2 mb-4">Key Ingredients</h2>
+                <ul className="list-disc list-inside space-y-1">
+                  {product.ingredients.map((ingredient, index) => (
+                    <li key={index}>{ingredient}</li>
+                  ))}
+                </ul>
+              </div>
+              {/* Specification */}
+              <div className="flex-1 mt-6">
+                <h2 className="text-2xl font-medium border-b border-white pb-2 mb-4">Specification</h2>
+                <ul className="list-disc list-inside space-y-1">
+                  {product.specifications.map((specification, index) => (
+                    <li key={index}>{specification}</li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
 
