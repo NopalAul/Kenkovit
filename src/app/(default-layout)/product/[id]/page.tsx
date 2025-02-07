@@ -57,7 +57,7 @@ const ProductDetail = () => {
           <div className="flex flex-col md:flex-row gap-10 flex-grow">
             {/* Benefits */}
             <div className="flex-1">
-              <h2 className="text-2xl font-medium border-b border-white pb-2 mb-4">Benefits</h2>
+              <h2 className="text-2xl font-medium border-b border-white pb-2 mb-4">Key Benefits</h2>
               <ul className="list-disc list-inside space-y-2">
                 {product.benefits.map((benefit, index) => (
                   <li key={index}>{benefit}</li>
@@ -67,7 +67,7 @@ const ProductDetail = () => {
 
             {/* Ingredients */}
             <div className="flex-1">
-              <h2 className="text-2xl font-medium border-b border-white pb-2 mb-4">Ingredients</h2>
+              <h2 className="text-2xl font-medium border-b border-white pb-2 mb-4">Key Ingredients</h2>
               <ul className="list-disc list-inside space-y-2">
                 {product.ingredients.map((ingredient, index) => (
                   <li key={index}>{ingredient}</li>
