@@ -58,7 +58,7 @@ export default function Ingredient() {
       <HeroSection />
 
       {/* Functional Ingredients */}
-      <div className="flex flex-col items-center justify-center py-12 px-[9vw]">
+      <div className="flex flex-col items-center justify-center py-12 px-[5vw] md:px-[9vw]">
         <div className="py-8">
           <h2 className="text-2xl font-semibold text-center text-purple1 mb-6">
             Functional Ingredients
@@ -81,7 +81,9 @@ export default function Ingredient() {
               {ingredients.map((item, index) => (
                 <div key={index}>
                   <button
-                    className="w-3/4 flex justify-between items-center bg-purple1 text-white font-semibold py-3 px-4 rounded-full transition-all"
+                    className={`w-full md:w-4/5 flex justify-between items-center bg-purple1 text-white font-semibold py-3 px-4 rounded-full transition-all ${
+                      openIndex === index ? "" : "transition-transform hover:scale-101"
+                    }`}
                     onClick={() => toggleDropdown(index)}
                   >
                     {item.title}
@@ -98,20 +100,76 @@ export default function Ingredient() {
 
                   {/* Dropdown Content */}
                   <div
-                    className={`flex items-start gap-4 transition-all duration-500 overflow-hidden ml-2 ${
+                    className={`flex items-start gap-4 transition-all duration-500 overflow-hidden ml-2 md:w-4/5 ${
                       openIndex === index ? "max-h-[500px] mt-3 border-l-2 border-purple1" : "max-h-0"
                     }`}
                   >
-                    {/* <div
-                      className={`w-[10px] bg-purple1 transition-all ${
-                        openIndex === index ? "h-[full] max opacity-100" : "h-0 opacity-0"
-                      }`}
-                    /> */}
                     <p className="text-gray-700 text-md mx-2 px-2">{item.content}</p>
                   </div>
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+      </div>
+    {/* Clinical Studies Section */}
+      <div className="py-12 px-[5vw] md:px-[9vw]">
+        <h2 className="text-2xl font-semibold text-center text-purple1 py-8 md:mb-10">
+          Clinical Studies
+        </h2>
+
+        {/* Hydrolyzed Marine Collagen */}
+        <div className="flex flex-col-reverse md:flex-row items-center mb-12">
+          <div className="md:w-1/2">
+            <h3 className="text-lg font-semibold text-purple1 mb-4 rounded-l-full px-6 py-2 border-b-4 border-purple1">
+              Hydrolyzed Marine Collagen
+            </h3>
+            <p className="text-gray-700">
+              Clinical research has demonstrated that Hydrolyzed Marine Collagen significantly enhances skin collagen synthesis compared to other collagen sources.
+              In a study by Matsumoto et al. (Journal of New Technology & Medicine), 25 women with dry and rough skin experienced notable improvements after
+              consuming hydrolyzed collagen. The study reported:
+            </p>
+            <ul className="list-disc list-inside text-gray-700 mt-2">
+              <li>Increased skin moisture levels</li>
+              <li>Enhanced skin viscoelasticity</li>
+              <li>Improved skin smoothness</li>
+              <li>Reduction in wrinkles and roughness</li>
+            </ul>
+          </div>
+          <div className="md:w-1/2 flex justify-center mb-6 md:mb-0">
+            <Image
+              src="/images/Ingredient/clinical.png"
+              alt="Hydrolyzed Marine Collagen Study"
+              width={400}
+              height={300}
+              className="object-contain"
+            />
+          </div>
+        </div>
+
+        {/* Vitamin C & E */}
+        <div className="flex flex-col md:flex-row items-center my-20">
+          <div className="md:w-1/2 flex justify-center mb-6 md:mb-0">
+            <Image
+              src="/images/Ingredient/vitamin.png"
+              alt="Vitamin C & E Study"
+              width={400}
+              height={300}
+              className="object-contain"
+            />
+          </div>
+          <div className="md:w-1/2">
+            <h3 className="text-lg font-semibold text-purple1 mb-4 rounded-l-full px-6 py-2 border-b-4 border-purple1">Vitamin C & E</h3>
+            <p className="text-gray-700">
+              Dr. Kim, a researcher at the University of California, Los Angeles (UCLA), published findings in the Journal of the American Academy of Dermatology highlighting the critical roles of Vitamins C and E:
+            </p>
+            <ul className="list-disc list-inside text-gray-700 mt-2">
+              <li>Vitamin C: Essential for collagen and elastin formation, its antioxidant properties help prevent UV-induced skin damage.</li>
+              <li>Vitamin E: Acts as a potent antioxidant, protecting cell membranes and significantly contributing to the prevention of skin aging.</li>
+            </ul>
+            <p className="text-gray-700 mt-2">
+            Multiple studies confirm that the combination of Vitamins C and E is highly effective in preventing sun-related skin damage, making it an excellent strategy for photoprotection therapy.
+            </p>
           </div>
         </div>
       </div>
