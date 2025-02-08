@@ -52,7 +52,7 @@ const Footer = () => {
                             alt="Kenkovit Logo" 
                             width={200} 
                             height={78} 
-                            className="md:ml-[25%] mb-10 md:mb-none w-40 md:w-full h-auto"
+                            className="md:ml-[25%] mb-10 md:mb-none w-40 h-auto"
                         />
                     </div>
                     <div className="flex grid-cols-1 gap-2 text-white sm:grid md:grid-cols-2 md:gap-6">
