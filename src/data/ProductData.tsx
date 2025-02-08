@@ -6,7 +6,7 @@ const products = [
     image: "/images/Product/beauty_collagen_shadow.png",
     bgColor: "bg-white",
     description:
-      "Kenkovit Beauty Collagen is a premium beauty supplement formulated with Japan Marine Collagen, Astaxanthin, and Natural Vitamin E to nourish and revitalize your skin from within.",
+      "Premium beauty supplement formulated with Japan Marine Collagen, Astaxanthin, and Natural Vitamin E to nourish and revitalize your skin from within. Marine Collagen, sourced from deep-sea fish in Japan, halal-certified, and hydrolyzed for superior absorption (<5000 kDalton). Astaxanthin, a powerful antioxidant, 6000x stronger than Vitamin E, derived from purified Japanese marine algae and encapsulated to maintain its potency.",
     benefits: [
       "Anti-wrinkles & fine lines",
       "Anti-aging support",
@@ -33,7 +33,7 @@ const products = [
     image: "/images/Product/beauty_bright_shadow.png",
     bgColor: "bg-pink-100",
     description:
-      "Kenkovit Beauty Bright is a premium beauty supplement formulated with Glutathione, Japan Marine Collagen, and Herbal Extracts to promote brighter, healthier skin.",
+      "Premium beauty supplement formulated with Glutathione, Japan Marine Collagen, and Herbal Extracts to promote brighter, healthier skin.  Glutathione Reduced, a high-quality whitening agent proven by research from top global universities effectively lighten skin tone and improve skin clarity.  Marine Collagen, supports skin elasticity, hydration, and anti-aging benefits.",
     benefits: [
       "Brightens and evens skin tone",
       "Reduces wrinkles & fine lines",
@@ -62,7 +62,7 @@ const products = [
     image: "/images/Product/choco_shadow.png",
     bgColor: "bg-white",
     description:
-      "Kenkovit Creamy Chocolate Drink is a high-collagen supplement featuring hydrolyzed marine collagen from Japan. Enriched with Vitamin E and Vitamin C, it promotes skin, nail, hair, and joint health.",
+      "The ultimate high-collagen drink, featuring hydrolyzed marine collagen sourced directly from Japan for its exceptional quality.  Enhanced with natural Vitamin E and Vitamin C, this product harnesses powerful antioxidants that work synergistically to regenerate cells and prevent damage. The advanced blend not only supports skin health but also benefits your nails, hair, and joints.",
     benefits: [
       "Anti-Aging: Helps prevent premature aging",
       "Anti-Wrinkle: Reduces wrinkles and fine lines",
@@ -85,7 +85,7 @@ const products = [
     image: "/images/Product/moist_spray.png",
     bgColor: "bg-pink-100",
     description:
-      "Kenkovit Moist Spray is a multifunctional hydrating mist designed to nourish, brighten, and combat signs of aging. Infused with hydrolyzed marine collagen and brightening polypeptides.",
+      "Multifunctional hydrating mist designed to nourish, brighten, and prevent signs of aging. Its optimal humectant formula delivers intense moisture to your face, hands, and body. Infused with hydrolyzed marine collagen from halal-certified deep-sea Japanese fish, it ensures superior absorption, while its brightening agents (polypeptides) enhance your skin’s radiance for a revitalized look.",
     benefits: [
       "Hydration: Provides lasting moisture",
       "Anti-Aging: Helps prevent early signs of aging",
@@ -102,7 +102,7 @@ const products = [
     image: "/images/Product/perfumed_body_cream.png",
     bgColor: "bg-white",
     description:
-      "Kenkovit Perfumed Body Cream is a luxurious moisturizer with Organic Sea Butter, Cocoa Butter, Vegan Oil, and Vitamin E. It deeply hydrates, brightens, and prevents premature aging.",
+      "Specially formulated for those who desire soft, smooth skin with a luminous glow. Crafted with premium natural ingredients—including Organic Sea Butter, Cocoa Butter, Vegan Oil, and Essential Oils enriched with Natural Vitamin E—this cream quickly absorbs to prevent premature aging. Enhanced with imported whitening agents from Japan and Germany, it effectively brightens your skin.",
     benefits: [
       "Hydration: Deeply moisturizes the skin",
       "Brightening: Enhances skin tone and clarity",
@@ -126,7 +126,7 @@ const products = [
     image: "/images/Product/hand_sanitizer_shadow.png",
     bgColor: "bg-pink-100",
     description:
-      "Kenkovit Hand Sanitizer is a food-grade hand cleanser with 70% ethanol and aloe vera extract. It effectively kills bacteria while keeping hands soft and hydrated.",
+      "Convenient hand cleanser designed to protect against germs, bacteria, and viruses. Formulated with 70% food-grade ethanol and enriched with aloe vera extract, it cleans effectively without leaving a sticky residue and dries quickly. Made with pure ethanol, this sanitizer is exceptionally safe for families, including children, and is proven to sanitize while moisturizing the skin.",
     benefits: [
       "Bactericidal: Kills 99.9% of bacteria, viruses, and germs",
       "Premium Food-Grade Formula: 70% ethanol, non-irritating and safe",
@@ -149,7 +149,7 @@ const products = [
     image: "/images/Product/vitamin_c_e.png",
     bgColor: "bg-yellow-100",
     description:
-      "Kenkovit Vitamin C & E combines essential nutrients to boost immunity, support collagen production, and enhance skin health.",
+      "Vital supplement that combines two essential nutrients to support your overall health. Each capsule delivers a potent dose of Vitamin C (500 mg) to boost immune function   and promote collagen formation  Complemented by Vitamin E (400 IU), a powerful antioxidant that supports healthy skin and cell membranes, this combination is ideal for enhancing your body’s immune system.",
     benefits: [
       "Boosts Immunity: Strengthens the body’s natural defenses",
       "Supports Collagen Formation: Promotes skin health and elasticity",
@@ -167,7 +167,7 @@ const products = [
     image: "/images/Product/herba_bee_pollen.png",
     bgColor: "bg-orange-100",
     description:
-      "Kenkovit Herba Bee Pollen is a blend of herbal extracts and bee pollen to support digestive health, boost immunity, and provide natural energy.",
+      "Unique blend of potent herbal extracts and  bee pollen designed to support digestive health, boost immunity, and provide a natural energy source. This formula features a synergistic mix of natural herbs, including turmeric, ginger, and Java turmeric combined with bee pollen. It harnesses high antioxidant properties to naturally booster your immune system and overall vitality.",
     benefits: [
       "Enhances Immune Function: Boosts natural defenses",
       "Natural Energy Source: Provides essential nutrients",
