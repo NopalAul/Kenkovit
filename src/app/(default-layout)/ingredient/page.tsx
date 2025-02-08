@@ -58,7 +58,7 @@ export default function Ingredient() {
       <HeroSection />
 
       {/* Functional Ingredients */}
-      <div className="flex flex-col items-center justify-center py-12 px-[5vw] md:px-[9vw]">
+      <div className="flex flex-col items-center justify-center py-12 px-[5vw] md:px-[9vw] mb-10">
         <div className="py-8">
           <h2 className="text-2xl font-semibold text-center text-purple1 mb-6">
             Functional Ingredients
@@ -113,13 +113,13 @@ export default function Ingredient() {
         </div>
       </div>
     {/* Clinical Studies Section */}
-      <div className="py-12 px-[5vw] md:px-[9vw]">
+      {/* <div className="py-12 px-[5vw] md:px-[9vw]">
         <h2 className="text-2xl font-semibold text-center text-purple1 py-8 md:mb-10">
           Clinical Studies
-        </h2>
+        </h2> */}
 
         {/* Hydrolyzed Marine Collagen */}
-        <div className="flex flex-col-reverse md:flex-row items-center mb-12">
+        {/* <div className="flex flex-col-reverse md:flex-row items-center mb-12">
           <div className="md:w-1/2">
             <h3 className="text-lg font-semibold text-purple1 mb-4 rounded-l-full px-6 py-2 border-b-4 border-purple1">
               Hydrolyzed Marine Collagen
@@ -145,10 +145,10 @@ export default function Ingredient() {
               className="object-contain"
             />
           </div>
-        </div>
+        </div> */}
 
         {/* Vitamin C & E */}
-        <div className="flex flex-col md:flex-row items-center my-20">
+        {/* <div className="flex flex-col md:flex-row items-center my-20">
           <div className="md:w-1/2 flex justify-center mb-6 md:mb-0">
             <Image
               src="/images/Ingredient/vitamin.png"
@@ -172,7 +172,7 @@ export default function Ingredient() {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }

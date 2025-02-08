@@ -3,7 +3,7 @@ const products = [
     id: 1,
     category: "beauty",
     name: "Kenkovit Beauty Collagen",
-    image: "/images/Product/beauty_collagen_shadow.png",
+    image: "/images/Product/beauty_collagen_shadow.svg",
     bgColor: "bg-white",
     description:
       "Premium beauty supplement formulated with Japan Marine Collagen, Astaxanthin, and Natural Vitamin E to nourish and revitalize your skin from within. Marine Collagen, sourced from deep-sea fish in Japan, halal-certified, and hydrolyzed for superior absorption (<5000 kDalton). Astaxanthin, a powerful antioxidant, 6000x stronger than Vitamin E, derived from purified Japanese marine algae and encapsulated to maintain its potency.",
@@ -30,7 +30,7 @@ const products = [
     id: 2,
     category: "beauty",
     name: "Kenkovit Beauty Bright",
-    image: "/images/Product/beauty_bright_shadow.png",
+    image: "/images/Product/beauty_bright_shadow.svg",
     bgColor: "bg-pink-100",
     description:
       "Premium beauty supplement formulated with Glutathione, Japan Marine Collagen, and Herbal Extracts to promote brighter, healthier skin.  Glutathione Reduced, a high-quality whitening agent proven by research from top global universities effectively lighten skin tone and improve skin clarity.  Marine Collagen, supports skin elasticity, hydration, and anti-aging benefits.",
@@ -59,7 +59,7 @@ const products = [
     id: 3,
     category: "beauty",
     name: "Kenkovit Creamy Chocolate",
-    image: "/images/Product/choco_shadow.png",
+    image: "/images/Product/choco_shadow.svg",
     bgColor: "bg-white",
     description:
       "The ultimate high-collagen drink, featuring hydrolyzed marine collagen sourced directly from Japan for its exceptional quality.  Enhanced with natural Vitamin E and Vitamin C, this product harnesses powerful antioxidants that work synergistically to regenerate cells and prevent damage. The advanced blend not only supports skin health but also benefits your nails, hair, and joints.",
@@ -82,7 +82,7 @@ const products = [
     id: 4,
     category: "beauty",
     name: "Kenkovit Moist Spray",
-    image: "/images/Product/moist_spray.png",
+    image: "/images/Product/moist_spray.svg",
     bgColor: "bg-pink-100",
     description:
       "Multifunctional hydrating mist designed to nourish, brighten, and prevent signs of aging. Its optimal humectant formula delivers intense moisture to your face, hands, and body. Infused with hydrolyzed marine collagen from halal-certified deep-sea Japanese fish, it ensures superior absorption, while its brightening agents (polypeptides) enhance your skin’s radiance for a revitalized look.",
@@ -99,7 +99,7 @@ const products = [
     id: 5,
     category: "beauty",
     name: "Kenkovit Perfumed Body Cream",
-    image: "/images/Product/perfumed_body_cream.png",
+    image: "/images/Product/perfumed_body_cream.svg",
     bgColor: "bg-white",
     description:
       "Specially formulated for those who desire soft, smooth skin with a luminous glow. Crafted with premium natural ingredients—including Organic Sea Butter, Cocoa Butter, Vegan Oil, and Essential Oils enriched with Natural Vitamin E—this cream quickly absorbs to prevent premature aging. Enhanced with imported whitening agents from Japan and Germany, it effectively brightens your skin.",
@@ -123,7 +123,7 @@ const products = [
     id: 6,
     category: "health",
     name: "Kenkovit Hand Sanitizer",
-    image: "/images/Product/hand_sanitizer_shadow.png",
+    image: "/images/Product/hand_sanitizer_shadow.svg",
     bgColor: "bg-pink-100",
     description:
       "Convenient hand cleanser designed to protect against germs, bacteria, and viruses. Formulated with 70% food-grade ethanol and enriched with aloe vera extract, it cleans effectively without leaving a sticky residue and dries quickly. Made with pure ethanol, this sanitizer is exceptionally safe for families, including children, and is proven to sanitize while moisturizing the skin.",
@@ -146,8 +146,8 @@ const products = [
     id: 7,
     category: "health",
     name: "Kenkovit Vitamin C & E",
-    image: "/images/Product/vitamin_c_e.png",
-    bgColor: "bg-yellow-100",
+    image: "/images/Product/vitamin_c_e.svg",
+    bgColor: "bg-white",
     description:
       "Vital supplement that combines two essential nutrients to support your overall health. Each capsule delivers a potent dose of Vitamin C (500 mg) to boost immune function   and promote collagen formation  Complemented by Vitamin E (400 IU), a powerful antioxidant that supports healthy skin and cell membranes, this combination is ideal for enhancing your body’s immune system.",
     benefits: [
@@ -164,8 +164,8 @@ const products = [
     id: 8,
     category: "health",
     name: "Kenkovit Herba Bee Pollen",
-    image: "/images/Product/herba_bee_pollen.png",
-    bgColor: "bg-orange-100",
+    image: "/images/Product/herba_bee_pollen.svg",
+    bgColor: "bg-pink-100",
     description:
       "Unique blend of potent herbal extracts and  bee pollen designed to support digestive health, boost immunity, and provide a natural energy source. This formula features a synergistic mix of natural herbs, including turmeric, ginger, and Java turmeric combined with bee pollen. It harnesses high antioxidant properties to naturally booster your immune system and overall vitality.",
     benefits: [

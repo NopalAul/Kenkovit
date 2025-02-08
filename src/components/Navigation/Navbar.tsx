@@ -9,7 +9,7 @@ const menu = [
   { name: "Home", path: "/" },
   { name: "About", path: "/about" },
   { name: "Product", path: "/product" },
-  { name: "Ingredient", path: "/ingredient" },
+  { name: "Key Ingredient", path: "/ingredient" },
   { name: "FAQ", path: "/faq" },
   { name: "Contact", path: "/contact" },
 ];
@@ -44,7 +44,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 z-50 flex w-full justify-between items-center py-4 px-[9vw] transition-all duration-300 ${
+      className={`fixed top-0 z-50 flex w-full justify-between items-center py-4 px-[5vw] md:px-[9vw] transition-all duration-300 ${
         (isAtTop && !menuOpen) ? "bg-transparent" : "bg-white shadow-lg2"
       } ${(isScrollingUp || menuOpen) ? "translate-y-0" : "-translate-y-full"}`}
     >
