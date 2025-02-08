@@ -13,7 +13,7 @@ export default function HomePage() {
         alt="Model"
         width={1014}
         height={460}
-        className="absolute z-10 top-48 right-12"
+        className="absolute z-10 bottom-36 md:top-48 right-0 md:right-12"
         />
       {/* under model section */}
       <div className="grid grid-cols-2">
