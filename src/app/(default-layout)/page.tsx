@@ -18,7 +18,7 @@ export default function HomePage() {
       <HeroSection />
       {/* model img */}
       <Image 
-        src="/images/model.svg"
+        src="/images/model.webp"
         alt="Model"
         width={1014}
         height={460}

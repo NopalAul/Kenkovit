@@ -5,7 +5,7 @@ const HeroSection = () => {
     <div className="relative w-full h-[80vh] flex justify-center items-center overflow-x-hidden">
       {/* Background Image */}
       <Image 
-        src="/images/sakura_bg.svg" 
+        src="/images/sakura_bg.webp" 
         alt="Sakura Background" 
         fill
         className="object-cover"

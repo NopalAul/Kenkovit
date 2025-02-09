@@ -38,7 +38,7 @@ const ProductDetail = () => {
           alt={product.name}
           width={350}
           height={350}
-          className="ml-8 md:ml-0 h-[30vh] md:h-full"
+          className="ml-8 md:ml-0 h-[30vh] w-auto md:h-full"
         />
       </div>
 
@@ -46,7 +46,7 @@ const ProductDetail = () => {
       <div className="flex flex-col md:flex-row items-stretch">
         <div className="w-full md:w-1/4 relative flex">
           <Image
-            src="/images/model2.svg"
+            src="/images/model2.webp"
             alt="Model"
             fill
             className="object-cover"

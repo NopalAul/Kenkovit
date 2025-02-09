@@ -58,16 +58,16 @@ export default function Ingredient() {
       <HeroSection />
 
       {/* Functional Ingredients */}
-      <div className="flex flex-col items-center justify-center py-12 px-[5vw] md:px-[9vw] mb-10">
+      <div className="flex flex-col items-center justify-center py-16 px-[5vw] md:px-[9vw] mb-14">
         <div className="py-8">
-          <h2 className="text-2xl font-semibold text-center text-purple1 mb-6">
+          <h2 className="text-2xl md:text-3xl font-medium text-center text-purple1 mb-6">
             Functional Ingredients
           </h2>
         </div>
         <div className="flex flex-col md:flex-row">
-          <div className="md:w-1/3 flex justify-center">
+          <div className="md:w-1/3 ml-5 md:ml-0 flex justify-center">
             <Image
-              src="/images/Product/group1_shadow.png"
+              src="/images/Product/group.png"
               alt="Kenkovit Products"
               width={400}
               height={400}
