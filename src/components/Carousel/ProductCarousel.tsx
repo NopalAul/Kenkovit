@@ -10,7 +10,7 @@ const ProductCarousel = () => {
   return (
     <div className="relative flex flex-col items-center justify-between w-full py-12 px-[5vw] md:px-[9vw] bg-white2">
       {/* Title */}
-      <div className="text-3xl font-normal text-purple1 mt-6 mb-6">
+      <div className="text-2xl md:text-3xl font-medium text-purple1 mt-16 mb-6">
         <h2>Our Products</h2>
       </div>
       <div className="flex flex-col md:flex-row items-center justify-center">
@@ -41,7 +41,7 @@ const ProductCarousel = () => {
         <div className="w-full h-full flex items-center justify-center mb-12">
           <Link href="/product">
             <button className="bg-purple1 text-white pl-4 pr-2 py-2 rounded-full shadow-lg flex items-center justify-between">
-              <div>
+              <div className="text-sm md:text-md">
                 See More
               </div>
               <div className="rounded-full bg-white w-8 md:w-10 h-8 md:h-10 flex items-center justify-center ml-2 text-purple1 font-bold text-lg">

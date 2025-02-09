@@ -95,7 +95,7 @@ const ProductDetail = () => {
 
         </div>
       </div>
-      <div className="p-28"></div>
+      {/* <div className="p-28"></div> */}
     </div>
   );
 };

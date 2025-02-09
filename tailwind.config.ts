@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import tailwindGridCenter from "@khoohaoyit/tailwind-grid-center";
 
 export default {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
@@ -42,5 +43,7 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    tailwindGridCenter,
+  ],
 } satisfies Config;
