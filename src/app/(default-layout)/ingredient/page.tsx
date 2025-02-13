@@ -30,11 +30,8 @@ const ingredients = [
   },
   {
     title: "Natural Vitamin E",
-    content: `The natural form of Vitamin E used in Kenkovit Beauty Collagen® is more effective than its synthetic counterpart. 
-      It protects cell membranes, aids in cell regeneration, and plays a critical role in preventing skin aging. Key functions include:
-      - Anti-aging support by preventing premature skin aging
-      - Acting as a powerful antioxidant to maintain a healthy, radiant complexion
-      - Protecting and regenerating skin cell membranes
+    content: `The natural form of Vitamin E used in Kenkovit Beauty Collagen is more effective than its synthetic counterpart. 
+      It protects cell membranes, aids in cell regeneration, and plays a critical role in preventing skin aging. Key functions including anti-aging support by preventing premature skin aging, acting as a powerful antioxidant to maintain a healthy, radiant complexion, as well as protecting and regenerating skin cell membranes.
       
       Research has shown that the combined use of Vitamin C and Natural Vitamin E offers superior photoprotection, 
       helping to shield the skin from sun-induced damage.`,

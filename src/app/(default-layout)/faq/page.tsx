@@ -5,23 +5,23 @@ import { useState } from "react";
 
 const faqData = [
   {
-    question: "Mengapa Kenkovit Beauty Collagen® bermanfaat untuk mencegah penuaan dan dapat meningkatkan kecantikan dan kesehatan tubuh?",
-    answer: `Sejak umur 25 tahun, tubuh akan kehilangan kolagen 1.5% per tahun. Kolagen merupakan sejenis protein penopang utama kulit. Jika kolagen berkurang signifikan, akibatnya kulit terlihat kendur dan keriput. Kenkovit Beauty Collagen® diformulasikan secara khusus untuk membantu pembentukan kolagen dan mengganti kehilangan kolagen tubuh.`,
+    question: "Mengapa Kenkovit Beauty Collagen bermanfaat untuk mencegah penuaan dan dapat meningkatkan kecantikan dan kesehatan tubuh?",
+    answer: `Sejak umur 25 tahun, tubuh akan kehilangan kolagen 1.5% per tahun. Kolagen merupakan sejenis protein penopang utama kulit. Jika kolagen berkurang signifikan, akibatnya kulit terlihat kendur dan keriput. Kenkovit Beauty Collagen diformulasikan secara khusus untuk membantu pembentukan kolagen dan mengganti kehilangan kolagen tubuh.`,
   },
   {
-    question: "Apa saja kandungan utama Kenkovit Beauty Collagen®?",
-    answer: `Kenkovit Beauty Collagen® mengandung Hydrolized Marine Collagen, Vitamin C dan Vitamin E. 
+    question: "Apa saja kandungan utama Kenkovit Beauty Collagen?",
+    answer: `Kenkovit Beauty Collagen mengandung Hydrolized Marine Collagen, Vitamin C dan Vitamin E. 
 - Hydrolized Marine Collagen: berasal dari Ikan Tilapia, dengan struktur yang mirip Kolagen tipe I manusia. 
 - Vitamin C: Membantu pembentukan Kolagen dan Elastin serta melindungi kulit dari sinar UV.
 - Vitamin E Alami: Mencegah penuaan kulit dan lebih efektif dibanding Vitamin E sintesis.`,
   },
   {
-    question: "Bagaimana sebaiknya cara mengkonsumsi Kenkovit Beauty Collagen®?",
+    question: "Bagaimana sebaiknya cara mengkonsumsi Kenkovit Beauty Collagen?",
     answer: `Dapat dikonsumsi kapan saja, tetapi untuk hasil optimal, sebaiknya dikonsumsi pagi hari dan malam hari sebelum tidur.`,
   },
   {
-    question: "Berapa kalori per serving Kenkovit Beauty Collagen®?",
-    answer: `Kenkovit Beauty Collagen® tersedia dalam 2 pilihan rasa: 
+    question: "Berapa kalori per serving Kenkovit Beauty Collagen?",
+    answer: `Kenkovit Beauty Collagen tersedia dalam 2 pilihan rasa: 
 - Creamy Chocolate: 95 Kalori
 - Sweet Orange: 89 Kalori`,
   },
