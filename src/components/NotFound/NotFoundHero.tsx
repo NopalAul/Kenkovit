@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const NotFoundHero = () => {
   return (
-    <div className="relative w-full h-[100vh] flex justify-center items-center overflow-x-hidden">
+    <div className="relative w-full h-[100vh] flex justify-center items-center overflow-x-hidden pb-36">
       <div className="absolute flex flex-col items-center text-center md:items-start md:text-left md:ml-[9vw] px-6">
         <h1 className="text-3xl md:text-4xl font-bold text-purple1 mb-4">
           <span className="block">Lost in the beauty of the internet?</span>
