@@ -56,7 +56,7 @@ export default function FAQPage() {
 
   return (
     <div className="px-[5vw] md:px-[15vw] py-36 mx-auto">
-      <h1 className="text-3xl font-bold text-center text-purple1 mb-8">
+      <h1 className="text-2xl md:text-3xl font-medium text-center text-purple1 mb-8">
         Frequently Asked Questions
       </h1>
 
