@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     template: "%s | Kenkovit",
   },
   description: "Kenkovit Website",
-  icons: [{ rel: "icon", url: "/favicon.ico" }],
+  icons: [{ rel: "icon", url: "/kenkovit.ico" }],
 };
 
 const poppins = Poppins({
