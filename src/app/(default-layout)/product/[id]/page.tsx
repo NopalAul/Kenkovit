@@ -20,16 +20,16 @@ const ProductDetail = () => {
   return (
     <div className="pt-24 md:pt-40">
       {/* Product Header */}
-      <div className="flex flex-col-reverse md:flex-row items-center justify-center px-[5vw] md:px-[9vw] pb-14 md:pb-20">
+      <div className="flex flex-col-reverse md:flex-row items-center justify-center px-[5vw] md:px-[9vw] pb-2 md:pb-20">
         {/* Text Section */}
-        <div className="max-w-lg text-left">
+        <div className="max-w-lg text-left mb-8">
           <h1 className="flex flex-col">
-            <span className="text-2xl text-purple1 font-semibold">{product.name.split(" ")[0]}</span>{" "}
-            <span className="text-4xl bg-text-gradient text-transparent bg-clip-text font-bold h-12">
+            <span className="text-xl md:text-2xl text-purple1 font-semibold">{product.name.split(" ")[0]}</span>{" "}
+            <span className="text-3xl md:text-4xl bg-text-gradient text-transparent bg-clip-text font-bold h-12">
               {product.name.split(" ").slice(1).join(" ")}
             </span>
           </h1>
-          <p className="text-gray-700 mt-4 md:mt-8 md:mr-8">{product.description}</p>
+          <p className="text-gray-700 mt-2 md:mt-6 md:mr-8">{product.description}</p>
         </div>
 
         {/* Product Image */}
@@ -54,7 +54,7 @@ const ProductDetail = () => {
         </div>
 
         <div className="w-full md:w-3/4 bg-purple1 text-white py-8 px-[5vw] md:p-8 flex flex-col pr-[9vw]">
-          <div className="flex flex-col md:flex-row gap-10 flex-grow">
+          <div className="flex flex-col md:flex-row gap-6 md:gap-10 flex-grow">
             {/* Benefits */}
             <div className="flex-1">
               <h2 className="text-xl md:text-2xl font-medium border-b border-white pb-2 mb-4">Key Benefits</h2>

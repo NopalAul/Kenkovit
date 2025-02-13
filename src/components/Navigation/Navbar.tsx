@@ -81,17 +81,17 @@ const Navbar = () => {
         className="md:hidden flex flex-col items-center justify-center w-10 h-10 relative"
       >
         <div
-          className={`w-6 h-[2px] bg-black rounded-full transition-all duration-300 ${
+          className={`w-6 h-[2px] bg-purple1 rounded-full transition-all duration-300 ${
             menuOpen ? "rotate-45 translate-y-1.5" : ""
           }`}
         ></div>
         <div
-          className={`w-6 h-[2px] bg-black rounded-full transition-all duration-300 my-1 ${
+          className={`w-6 h-[2px] bg-purple1 rounded-full transition-all duration-300 my-1 ${
             menuOpen ? "opacity-0" : "opacity-100"
           }`}
         ></div>
         <div
-          className={`w-6 h-[2px] bg-black rounded-full transition-all duration-300 ${
+          className={`w-6 h-[2px] bg-purple1 rounded-full transition-all duration-300 ${
             menuOpen ? "-rotate-45 -translate-y-1.5" : ""
           }`}
         ></div>
@@ -100,7 +100,7 @@ const Navbar = () => {
 
       {/* Mobile Menu Dropdown */}
       <div
-        className={`absolute top-16 left-0 w-full rounded-b-3xl bg-white shadow-lg2 transition-all duration-300 ${
+        className={`absolute top-16 left-0 w-full rounded-b-3xl bg-white shadow-lg transition-all duration-300 ${
           menuOpen ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0"
         } overflow-hidden md:hidden`}
       >
