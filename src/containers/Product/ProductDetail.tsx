@@ -24,12 +24,12 @@ const ProductDetail = () => {
         {/* Text Section */}
         <div className="max-w-lg text-left mb-8">
           <h1 className="flex flex-col">
-            <span className="text-xl md:text-2xl text-purple1 font-semibold">{product.name.split(" ")[0]}</span>{" "}
-            <span className="text-3xl md:text-4xl bg-text-gradient text-transparent bg-clip-text font-bold h-12">
+            <span className="text-lg md:text-2xl text-purple1 font-semibold">{product.name.split(" ")[0]}</span>{" "}
+            <span className="mt-[-2] text-2xl md:text-4xl bg-text-gradient text-transparent bg-clip-text font-bold h-12">
               {product.name.split(" ").slice(1).join(" ")}
             </span>
           </h1>
-          <p className="text-gray-700 mt-2 md:mt-6 md:mr-8">{product.description}</p>
+          <p className="text-gray-700 md:mt-6 md:mr-8 text-sm">{product.description}</p>
         </div>
 
         {/* Product Image */}
@@ -57,8 +57,8 @@ const ProductDetail = () => {
           <div className="flex flex-col md:flex-row gap-6 md:gap-10 flex-grow">
             {/* Benefits */}
             <div className="flex-1">
-              <h2 className="text-xl md:text-2xl font-medium border-b border-white pb-2 mb-4">Key Benefits</h2>
-              <ul className="list-disc list-inside space-y-1">
+              <h2 className="text-lg md:text-2xl font-medium border-b border-white pb-2 mb-4">Key Benefits</h2>
+              <ul className="list-disc list-inside space-y-1 text-sm">
                 {product.benefits.map((benefit, index) => (
                   <li key={index}>{benefit}</li>
                 ))}
@@ -68,8 +68,8 @@ const ProductDetail = () => {
             <div className="flex-1">
               {/* Ingredients */}
               <div className="flex-1">
-                <h2 className="text-xl md:text-2xl font-medium border-b border-white pb-2 mb-4">Key Ingredients</h2>
-                <ul className="list-disc list-inside space-y-1">
+                <h2 className="text-lg md:text-2xl font-medium border-b border-white pb-2 mb-4">Key Ingredients</h2>
+                <ul className="list-disc list-inside space-y-1 text-sm">
                   {product.ingredients.map((ingredient, index) => (
                     <li key={index}>{ingredient}</li>
                   ))}
@@ -77,8 +77,8 @@ const ProductDetail = () => {
               </div>
               {/* Specification */}
               <div className="flex-1 mt-6">
-                <h2 className="text-xl md:text-2xl font-medium border-b border-white pb-2 mb-4">Specification</h2>
-                <ul className="list-disc list-inside space-y-1">
+                <h2 className="text-lg md:text-2xl font-medium border-b border-white pb-2 mb-4">Specification</h2>
+                <ul className="list-disc list-inside space-y-1 text-sm">
                   {product.specifications.map((specification, index) => (
                     <li key={index}>{specification}</li>
                   ))}
@@ -89,8 +89,8 @@ const ProductDetail = () => {
 
           {/* Usage Section */}
           <div className="mt-8">
-            <h2 className="text-xl md:text-2xl font-medium border-b border-white pb-2 mb-4">Usage</h2>
-            <p className="mt-2">{product.usage}</p>
+            <h2 className="text-lg md:text-2xl font-medium border-b border-white pb-2 mb-4">Usage</h2>
+            <p className="mt-2 text-sm">{product.usage}</p>
           </div>
 
         </div>
