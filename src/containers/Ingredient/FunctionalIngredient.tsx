@@ -53,7 +53,7 @@ export default function FunctionalIngredient() {
     <>
 
       {/* Functional Ingredients */}
-      <div className="flex flex-col items-center justify-center py-16 px-[5vw] md:px-[9vw] mb-14">
+      <div className="flex flex-col items-center justify-center py-10 px-[5vw] md:px-[9vw] mb-14">
         <div className="py-8">
           <h2 className="text-2xl md:text-3xl font-medium text-center text-purple1 mb-6">
             Functional Ingredients
@@ -99,7 +99,7 @@ export default function FunctionalIngredient() {
                       openIndex === index ? "max-h-[500px] mt-3 border-l-2 border-purple1" : "max-h-0"
                     }`}
                   >
-                    <p className="text-gray-700 text-md mx-2 px-2">{item.content}</p>
+                    <p className="text-gray-700 text-sm mx-2 px-2">{item.content}</p>
                   </div>
                 </div>
               ))}
