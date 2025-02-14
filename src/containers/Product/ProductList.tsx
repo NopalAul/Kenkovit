@@ -25,7 +25,7 @@ const ProductList = () => {
   return (
     <div className="py-20 px-[5vw] md:px-[9vw] items-center">
       {/* Search & filter section */}
-      <div className="w-full place-self-center max-w-[760px] flex flex-col md:flex-row justify-center items-center gap-2 mb-8 mx-32">
+      <div className="w-full place-self-center max-w-[760px] flex flex-col md:flex-row justify-center items-center gap-2 mb-8 mx-32 text-sm">
         <input
           type="text"
           placeholder="Search products..."
