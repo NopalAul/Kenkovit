@@ -12,7 +12,7 @@ export default function HomePage() {
         alt="Model"
         width={700}
         height={580}
-        className="absolute z-[-1] bottom-36 md:top-40 right-0 md:right-16"
+        className="absolute z-[-1] bottom-36 top-[60vh] md:top-40 right-0 md:right-16"
         />
     </>
   );

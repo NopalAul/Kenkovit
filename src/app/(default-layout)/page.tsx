@@ -22,10 +22,10 @@ export default function HomePage() {
         alt="Model"
         width={1014}
         height={460}
-        className="absolute z-10 bottom-36 md:top-48 right-0 md:right-12"
+        className="absolute z-10 bottom-36 top-[77vh] md:top-48 right-0 md:right-12"
         />
       {/* philosophy section */}
-      <div className="flex justify-center items-center py-24 md:py-44 px-[5vw]">
+      <div className="flex justify-center items-center py-20 md:py-40 px-[5vw]">
         <div className="text-center">
           <h2 className="text-2xl md:text-3xl font-medium text-purple1 mb-4">Kenkovit Philosophy</h2>
 
@@ -35,7 +35,7 @@ export default function HomePage() {
                 <div className="bg-pink1 p-4 md:p-6 rounded-full">
                   <Image src={src} alt={label} width={62} height={62} className="h-[50px] w-[50px]"/>
                 </div>
-                <span className="text-lg mt-2 md:mt-6 text-purple1">{label}</span>
+                <span className="text-sm md:text-lg mt-2 md:mt-6 text-purple1">{label}</span>
               </div>
             ))} 
           </div>

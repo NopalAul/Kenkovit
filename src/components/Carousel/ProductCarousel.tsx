@@ -8,7 +8,7 @@ import products from "@/data/ProductData";
 
 const ProductCarousel = () => {
   return (
-    <div className="relative flex flex-col items-center justify-between w-full py-12 px-[5vw] md:px-[9vw] bg-white2">
+    <div className="relative flex flex-col items-center justify-between w-full py-6 px-[5vw] md:px-[9vw] bg-white2">
       {/* Title */}
       <div className="text-2xl md:text-3xl font-medium text-purple1 mt-16 mb-6">
         <h2>Our Products</h2>
@@ -25,11 +25,11 @@ const ProductCarousel = () => {
               300: { slidesPerView: 1 },
               1024: { slidesPerView: 2 },
             }}
-            className="h-[45vh] md:h-[60vh] w-[99vw] md:w-[60vw] mb-12"
+            className="h-[60vh] md:h-[60vh] w-[99vw] md:w-[60vw] mb-6"
           >
             {products.map((product) => (
               <SwiperSlide key={product.id} className="flex items-center justify-center w-full">
-                <div className="w-[210px] h-full flex items-center justify-center">
+                <div className="w-[210px] h-full flex items-center justify-center mb-10">
                   <ProductCard id={product.id} />
                 </div>
               </SwiperSlide>
