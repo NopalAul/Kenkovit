@@ -99,7 +99,7 @@ export default function FunctionalIngredient() {
                       openIndex === index ? "max-h-[500px] mt-3 border-l-2 border-purple1" : "max-h-0"
                     }`}
                   >
-                    <p className="text-gray-700 text-sm mx-2 px-2">{item.content}</p>
+                    <p className="text-gray-700 text-md mx-2 px-2">{item.content}</p>
                   </div>
                 </div>
               ))}
