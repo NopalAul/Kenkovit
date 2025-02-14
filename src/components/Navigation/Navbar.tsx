@@ -104,7 +104,7 @@ const Navbar = () => {
           menuOpen ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0"
         } overflow-hidden md:hidden`}
       >
-        <ul className="flex flex-col items-center gap-6 md:gap-8 py-10 text-sm md:text-lg font-medium">
+        <ul className="flex flex-col items-center gap-6 md:gap-8 py-10 text-md md:text-lg font-medium">
           {menu.map(({ name, path }) => (
             <li key={path}>
               <Link
