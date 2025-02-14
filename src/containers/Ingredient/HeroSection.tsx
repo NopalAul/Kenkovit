@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <div className="relative w-full h-[98vh] md:h-[80vh] flex justify-center items-center overflow-x-hidden">
+    <div className="relative w-full h-[96vh] md:h-[80vh] flex justify-center items-center overflow-x-hidden">
       {/* Background Image */}
       <Image 
         src="/images/sakura_bg.webp" 
