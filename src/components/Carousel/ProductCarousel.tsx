@@ -3,6 +3,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import Link from "next/link";
+import Image from "next/image";
 import ProductCard from "@/components/Card/ProductCard";
 import products from "@/data/ProductData";
 
@@ -44,8 +45,8 @@ const ProductCarousel = () => {
               <div className="text-sm md:text-md">
                 See More
               </div>
-              <div className="rounded-full bg-white w-8 md:w-10 h-8 md:h-10 flex items-center justify-center ml-2 text-purple1 font-bold text-lg">
-                →
+              <div className="rounded-full bg-white w-8 md:w-8 h-8 md:h-8 flex items-center justify-center ml-2 text-purple1 font-bold text-lg">
+                <Image src="/images/icon/arrow.svg" alt="Arrow" width={14} height={14} className="w-[14px] h-[14px] md:w-[16px] md:h-[16px]"/>
               </div>
             </button>
           </Link>
