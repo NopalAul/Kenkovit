@@ -19,7 +19,7 @@ export default {
       inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
       none: 'none',
       card: '5px 8  px 30px 3px rgba(0, 0, 0, 0.1)',
-      card2: '3px 3px 4px 2px rgba(0, 0, 0, 0.1), -2px -2px 3px 2px rgb(255, 255, 255)',
+      card2: '3px 3px 4px 2px rgba(0, 0, 0, 0.1), -2px -2px 3px 2px rgba(255, 255, 255, 0.5)',
       card3: '6px 6px 10px 2px rgba(0, 0, 0, 0.1)',
       // x y blur spread color
       cardCombined: '10px 10px 30px 1px rgba(0, 0, 0, 0.1), -10px -10px 25px 1px rgb(255, 255, 255)',

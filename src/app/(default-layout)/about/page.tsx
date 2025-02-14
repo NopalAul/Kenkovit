@@ -79,7 +79,7 @@ export default function AboutPage() {
                 See Our Products
               </div>
               <div className="rounded-full bg-white w-8 md:w-8 h-8 md:h-8 flex items-center justify-center ml-2 text-purple1 font-bold text-lg">
-                <Image src="/images/icon/arrow.svg" alt="Arrow" width={14} height={14} className="w-[14px] h-[14px] md:w-[16px] md:h-[16px]"/>
+                <Image src="/images/Icon/arrow.svg" alt="Arrow" width={14} height={14} className="w-[14px] h-[14px] md:w-[16px] md:h-[16px]"/>
               </div>
             </button>
           </Link>
