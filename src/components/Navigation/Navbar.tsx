@@ -100,11 +100,11 @@ const Navbar = () => {
 
       {/* Mobile Menu Dropdown */}
       <div
-        className={`absolute top-16 left-0 w-full rounded-b-3xl bg-white shadow-lg transition-all duration-300 ${
+        className={`absolute top-16 left-0 w-full rounded-b-3xl bg-white shadow-lg2 transition-all duration-300 ${
           menuOpen ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0"
         } overflow-hidden md:hidden`}
       >
-        <ul className="flex flex-col items-center gap-8 py-12 text-lg font-medium">
+        <ul className="flex flex-col items-center gap-6 md:gap-8 py-10 text-sm md:text-lg font-medium">
           {menu.map(({ name, path }) => (
             <li key={path}>
               <Link

@@ -18,7 +18,7 @@ export default {
       '3xl': '0 35px 60px -15px rgba(0, 0, 0, 0.3)',
       inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
       none: 'none',
-      card: '0 20px 30px 3px rgba(0, 0, 0, 0.1)',
+      card: '5px 8  px 30px 3px rgba(0, 0, 0, 0.1)',
       card2: '6px 6px 10px 2px rgba(0, 0, 0, 0.1), -6px -6px 10px 2px rgb(255, 255, 255)',
       card3: '6px 6px 10px 2px rgba(0, 0, 0, 0.1)',
       // x y blur spread color
