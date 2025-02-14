@@ -22,7 +22,7 @@ export default function HomePage() {
         alt="Model"
         width={1014}
         height={460}
-        className="absolute z-10 bottom-36 top-[77vh] md:top-48 right-0 md:right-12"
+        className="absolute z-10 bottom-36 top-[80vh] md:top-48 right-0 md:right-12"
         />
       {/* philosophy section */}
       <div className="flex justify-center items-center py-20 md:py-40 px-[5vw]">
