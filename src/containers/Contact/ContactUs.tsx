@@ -53,7 +53,7 @@ export default function ContactUs() {
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 px-4">
       <h2 className="text-2xl md:text-3xl font-medium text-purple1 mb-6">Contact Us</h2>
 
-      <form onSubmit={handleSubmit} className="bg-white shadow-cardCombined rounded-lg p-6 w-full max-w-md">
+      <form onSubmit={handleSubmit} className="bg-white shadow-card2 md:shadow-cardCombined rounded-lg p-6 w-full max-w-md">
         <div className="mb-4">
           <label className="block text-gray-700 font-medium mb-1">Name</label>
           <input
