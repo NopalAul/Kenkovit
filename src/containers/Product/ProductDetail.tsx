@@ -16,11 +16,6 @@ const ProductDetail = () => {
     visible: { opacity: 1, x: 0 }
   };
 
-  const fadeIn = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1 }
-  };
-
   const params = useParams();
   const product = products.find((p) => p.id === Number(params.id));
 
@@ -71,9 +66,9 @@ const ProductDetail = () => {
           <Image
             src={product.image}
             alt={product.name}
-            width={350}
             height={350}
-            className="ml-8 md:ml-0 h-[30vh] w-auto md:h-full"
+            width={350}
+            className="ml-8 md:ml-0 h-[40vh] md:h-[400px] w-[auto] md:h-full"
           />
         </motion.div>
       </div>
