@@ -2,6 +2,8 @@
 @import 'swiper/css/navigation';
 @import 'swiper/css/pagination';
 
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -28,4 +30,26 @@ body {
 /* Change active pagination dot color */
 .swiper-pagination-bullet-active {
   background-color: #A82486 !important;
+}
+
+.delay-300 {
+  animation-delay: .3s;
+  }
+.delay-500 {
+animation-delay: .5s;
+}
+.delay-750 {
+animation-delay: .75s;
+}
+.delay-1 {
+animation-delay: 1s;
+}
+.delay-1300 {
+animation-delay: 1.3s;
+}
+.delay-1500 {
+animation-delay: 1.5s;
+}
+.delay-2 {
+animation-delay: 2s;
 }

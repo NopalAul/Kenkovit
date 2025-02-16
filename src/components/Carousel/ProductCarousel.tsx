@@ -4,12 +4,24 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import ProductCard from "@/components/Card/ProductCard";
 import products from "@/data/ProductData";
 
 const ProductCarousel = () => {
+  const fadeUp = {
+    hidden: { opacity: 0, y: 100 },
+    visible: { opacity: 1, y: 0 }
+  };
+
   return (
-    <div className="relative flex flex-col items-center justify-between w-full py-6 px-[5vw] md:px-[9vw] bg-white2">
+    <motion.div 
+    initial="hidden"
+    whileInView="visible"
+    viewport={{ once: true }}
+    transition={{ duration: 0.8 }}
+    variants={fadeUp}
+    className="relative flex flex-col items-center justify-between w-full py-6 px-[5vw] md:px-[9vw] bg-white2">
       {/* Title */}
       <div className="text-2xl md:text-3xl font-medium text-purple1 mt-16 mb-6">
         <h2>Our Products</h2>
@@ -52,7 +64,7 @@ const ProductCarousel = () => {
           </Link>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

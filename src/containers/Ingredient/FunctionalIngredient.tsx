@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
+
 
 const ingredients = [
   {
@@ -49,15 +51,26 @@ export default function FunctionalIngredient() {
     setOpenIndex(openIndex === index ? null : index);
   };
 
+  const fadeUp = {
+    hidden: { opacity: 0, y: 100 },
+    visible: { opacity: 1, y: 0 }
+  };
+
   return (
     <>
 
       {/* Functional Ingredients */}
       <div className="flex flex-col items-center justify-center py-10 px-[5vw] md:px-[9vw] mb-14">
         <div className="py-8">
-          <h2 className="text-2xl md:text-3xl font-medium text-center text-purple1 mb-6">
+          <motion.h2 
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          variants={fadeUp}
+          className="text-2xl md:text-3xl font-medium text-center text-purple1 mb-6">
             Functional Ingredients
-          </h2>
+          </motion.h2>
         </div>
         <div className="flex flex-col md:flex-row">
           <div className="md:w-1/3 ml-5 md:ml-0 flex justify-center">
@@ -74,7 +87,13 @@ export default function FunctionalIngredient() {
           <div className="md:w-2/3 w-full mt-8 md:mt-0">
             <div className="space-y-6">
               {ingredients.map((item, index) => (
-                <div key={index}>
+                <motion.div 
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, delay: (index) * 0.2 }}
+                variants={fadeUp}
+                key={index}>
                   <button
                     className={`w-full md:w-4/5 flex justify-between items-center bg-purple1 text-white font-semibold py-3 px-6 rounded-full transition-all ${
                       openIndex === index ? "" : "transition-transform hover:scale-101"
@@ -101,7 +120,7 @@ export default function FunctionalIngredient() {
                   >
                     <p className="text-gray-700 text-md mx-2 px-2">{item.content}</p>
                   </div>
-                </div>
+                </motion.div>
               ))}
             </div>
           </div>
