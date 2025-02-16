@@ -18,7 +18,7 @@ const HeroSection = () => {
           <span className="animate__animated animate__fadeInUp delay-750">Make your own destiny.</span>
         </h1>
 
-        <p className="mt-1 md:mt-4 text-sm md:text-lg font-normal md:mr-[48vw] max-w-[90%] md:max-w-[40vw] animate__animated animate__fadeInUp delay-1500">
+        <p className="mt-1 md:mt-4 text-sm md:text-lg font-normal md:mr-[48vw] max-w-[90%] md:max-w-[40vw] animate__animated animate__fadeInUp delay-1300">
           Nourish your skin, restore your glow, and embrace timeless beauty.
           Unlock the power of collagen and premium ingredients for a youthful, radiant, and healthy you.
         </p>

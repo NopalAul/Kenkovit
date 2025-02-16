@@ -3,8 +3,24 @@
 import { useParams } from "next/navigation";
 import products from "@/data/ProductData";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const ProductDetail = () => {
+  const fadeUp = {
+    hidden: { opacity: 0, y: 100 },
+    visible: { opacity: 1, y: 0 }
+  };
+
+  const fadeLeft = {
+    hidden: { opacity: 0, x: -100 },
+    visible: { opacity: 1, x: 0 }
+  };
+
+  const fadeIn = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1 }
+  };
+
   const params = useParams();
   const product = products.find((p) => p.id === Number(params.id));
 
@@ -23,27 +39,53 @@ const ProductDetail = () => {
       <div className="flex flex-col-reverse md:flex-row items-center justify-center px-[5vw] md:px-[9vw] pb-2 md:pb-20">
         {/* Text Section */}
         <div className="max-w-lg text-left mb-8">
-          <h1 className="flex flex-col">
+          <motion.h1 
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          variants={fadeLeft}
+          className="flex flex-col">
             <span className="text-lg md:text-2xl text-purple1 font-semibold">{product.name.split(" ")[0]}</span>{" "}
             <span className="mt-[-2] text-2xl md:text-4xl bg-text-gradient text-transparent bg-clip-text font-bold h-12">
               {product.name.split(" ").slice(1).join(" ")}
             </span>
-          </h1>
-          <p className="text-gray-700 md:mt-6 md:mr-8 text-sm">{product.description}</p>
+          </motion.h1>
+          <motion.p 
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+          variants={fadeLeft}
+          className="text-gray-700 md:mt-6 md:mr-8 text-sm">{product.description}</motion.p>
         </div>
 
         {/* Product Image */}
-        <Image
-          src={product.image}
-          alt={product.name}
-          width={350}
-          height={350}
-          className="ml-8 md:ml-0 h-[30vh] w-auto md:h-full"
-        />
+        <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        variants={fadeUp}
+        >
+          <Image
+            src={product.image}
+            alt={product.name}
+            width={350}
+            height={350}
+            className="ml-8 md:ml-0 h-[30vh] w-auto md:h-full"
+          />
+        </motion.div>
       </div>
 
       {/* Benefits, Ingredients, Specification & Model Image Section */}
-      <div className="flex flex-col md:flex-row items-stretch">
+      <motion.div 
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      transition={{ duration: 0.8 }}
+      variants={fadeUp}
+      className="flex flex-col md:flex-row items-stretch">
         <div className="w-full md:w-1/4 relative flex">
           <Image
             src="/images/model2.webp"
@@ -94,7 +136,7 @@ const ProductDetail = () => {
           </div>
 
         </div>
-      </div>
+      </motion.div>
       {/* <div className="p-28"></div> */}
     </div>
   );

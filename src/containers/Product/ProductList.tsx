@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Select from "react-select";
+import Image from "next/image";
 import products from "@/data/ProductData";
 import ProductCard from "@/components/Card/ProductCard";
 
@@ -25,27 +26,39 @@ const ProductList = () => {
   return (
     <div className="py-20 px-[5vw] md:px-[9vw] items-center">
       {/* Search & filter section */}
-      <div className="w-full place-self-center max-w-[760px] flex flex-col md:flex-row justify-center items-center gap-2 mb-8 mx-32 text-sm">
-        <input
-          type="text"
-          placeholder="Search products..."
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
-          className="w-full md:w-1/2 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-pink-300"
-        />
+      <div className="w-full place-self-center max-w-[760px] flex flex-col md:flex-row justify-center items-center gap-2 mb-3 md:mb-8 mx-32 text-sm">
+
+        <div className="relative w-full md:w-1/2">
+          <input
+            type="text"
+            placeholder="Search products..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            className="w-full px-10 py-2 shadow-md md:shadow-lg2 rounded-lg focus:outline-none focus:ring-1 focus:ring-pink-300"
+          />
+          <Image
+            src="/images/Icon/search.svg"
+            alt="Search"
+            width={20}
+            height={20}
+            className="absolute left-3 top-1/2 transform -translate-y-1/2 opacity-60"
+          />
+        </div>
+
         <Select
           value={categoryOptions.find(opt => opt.value === selectedCategory)}
           onChange={(selectedOption) => setSelectedCategory(selectedOption?.value || "")}
           options={categoryOptions}
-          className="w-full md:w-1/3"
+          className="w-full md:w-1/3 shadow-md md:shadow-lg2 rounded-lg"
           styles={{
             control: (provided) => ({
               ...provided,
-              borderColor: "#D6DADF",
+              borderColor: "none",
+              borderWidth: "0px",
               borderRadius: "8px",
-              height: "42px",
+              height: "32px",
               boxShadow: "none",
-              "&:hover": { borderColor: "#f9a8d4", borderWidth: "2px" },
+              "&:hover": { borderColor: "none", borderWidth: "2px" },
             }),
             option: (provided, state) => ({
               ...provided,
