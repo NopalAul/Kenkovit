@@ -7,7 +7,8 @@ import Navbar from "@/components/Navigation/Navbar";
 import Footer from "@/components/Navigation/Footer";
 
 export const metadata: Metadata = {
-  // metadataBase: new URL("https://sreitb.com"),
+  metadataBase: new URL("https://kenkovit.com"),
+  keywords: ["Kenkovit", "Kenkovit Website", "Kenkovit Company", "Kenkovit Beauty Collagen", "Collagen"],
   title: {
     default: "Kenkovit",
     template: "%s | Kenkovit",
